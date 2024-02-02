@@ -57,32 +57,8 @@
         </span>
       </div>
     </navbar>
-    <script src="/js/ub/nav.js"></script>
-    
     <iframe class="gam" src="/gams/" width="100%" style="user-select:none;display:block;" onload="setHeight()" frameborder="0">An error occured.</iframe>
     <script src="/js/gams.js"></script>
-    <script>
-      var gam = document.querySelector(".gam");
-      
-      gam.style.setProperty('height', 'calc(100vh - 60px)');
-
-      function goFullscreen(){
-        document.querySelector("navbar").style.display = "none";
-        gam.style.height = "100%";
-        document.documentElement.requestFullscreen();
-        document.body.style.overflow = "none";
-      }
-
-      document.addEventListener("fullscreenchange", function() {
-        if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement && !document.fullscreen){
-          //exit fullscreen
-          document.querySelector("navbar").style.display = "flex";
-          gam.style.height = "calc(100% - 58px)";
-          document.body.style.overflow = "hidden";
-        }
-      });
-
-      
-    </script>
+    <h1>Games were removed for space purposes. Apologies!</h1>
   </body>
 </html>
